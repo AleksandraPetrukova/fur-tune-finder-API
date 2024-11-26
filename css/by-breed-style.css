@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(152, 222, 222);
+    /* margin-bottom: 30px; */
+    height: 60px;
+    display: grid;
+    place-items: center;
+}
+
+header h1 {
+    text-shadow: 2px 2px rgb(237, 110, 178);
+}
+
+main {
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgb(249, 221, 119), rgb(255, 207, 35));
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.4;
+    
+}
+
+section {
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 80%; */
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-lvl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.lvl-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.circle-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(237, 110, 178);
+}
+
+.active {
+    background-color: rgb(237, 110, 178);
+}
+
+.line {
+    border-bottom: 2px solid rgb(237, 110, 178);
+    margin-bottom: 20px;
+}
+
+.wiki-link {
+    /* text-decoration: none; */
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#searchResultsDiv {
+    position: absolute;
+    /* when the matched breed results exceed the maximum height of 200px, a scrollbar will appear, */
+    overflow-y: auto;
+    width: 80%;
+    max-height: 200px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none; /* Hide the results div by default */
+    /* Apply border radius to the bottom-left and bottom-right corners */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.breed-option {
+    padding: 5px 10px;
+}
+
+#breedInfoDiv {
+    margin-top: 30px;
+}
+
+/* Apply padding when #searchResultsDiv is not empty */
+#searchResultsDiv:not(:empty) {
+    display: block;
+    /* padding: 10px; */
+} /* Add desired padding to the results div */
+
+label {
+    font-size: 20px;
+}
+
+input[type="text"] {
+    border: 3px solid rgb(237, 110, 178);
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.btn a {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid rgb(237, 110, 178);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background: rgb(152, 222, 222);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav-bar {
+    background-color: rgb(173, 246, 246);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-bar nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.nav-bar .line-nav {
+    border-left: 3px solid rgb(152, 222, 222);
+}
+
+.nav-bar a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
